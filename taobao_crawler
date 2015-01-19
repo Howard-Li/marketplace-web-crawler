@@ -4,7 +4,8 @@
 import urllib2
 import re
 
-# this function takes the set ID and the current price in our data base as parameters
+# input the keyword and the lower bound of price range (default 0)
+
 def get_taobao_price(keyword, lowerBound = 0):
     #lowerBound: the lower bound of the prices of interest. Use this to filtered those fake ones
     keyword = keyword.replace(' ','+')
@@ -72,5 +73,5 @@ def get_taobao_price(keyword, lowerBound = 0):
     except:
         print('no item found')
 
-
+# for example, if I want to search for a Lego toy set:
 print (get_taobao_price('lego 10242', 1200))
