@@ -54,7 +54,7 @@ def get_ebay_price(keyword, lowerBound = 0):
             print('no prices found in range')
 
     except:
-        print('no set')
+        print('no item found')
 
 
 
