@@ -3,10 +3,8 @@
 
 import urllib2
 import re
-from time import clock as now
-import json
 
-
+# input the keyword and the lower bound of price range (default 0)
 def get_jingdong_price(keyword, lowerBound = 0):
     #lowerBound: the lower bound of the prices of interest. This is the major filter.
     keyword = keyword.replace(' ','+')
@@ -55,4 +53,6 @@ def get_jingdong_price(keyword, lowerBound = 0):
     except:
         print ('cannot open webpage')
 
+
+# for example, if I want to search for a Lego toy set:
 print(get_jingdong_price('lego 42009',2000))
