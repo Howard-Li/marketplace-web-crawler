@@ -56,4 +56,7 @@ def get_ebay_price(keyword, lowerBound = 0):
     except:
         print('no set')
 
+
+
+# for example, if I want to search for a Lego toy set:
 print (get_ebay_price('lego 10242', 99))
